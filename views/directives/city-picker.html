@@ -1,0 +1,5 @@
+<div class="sub-header">Show me weather in:</div>
+<div class="citypicker-container">
+  <input class="city-input" ng-model='cityData.cityName' type="text" ng-keypress="($event.which === 13)?fetchWeather():0">
+  <div class="search-button" ng-click="fetchWeather()">Go!</div>
+</div>

@@ -1,0 +1,9 @@
+<div class="city-data-container" ng-show="cityData.hasErrors()">
+  <div class="city-data-large-text">Oh snap! An error occured!</div>
+  <div>{{cityData.getError()}}</div>
+</div>
+<div class="city-data-container" ng-show="!cityData.hasErrors() && !cityData.isEmpty()">
+  <div class="city-data-large-text">Weather right now in {{cityData.getLocation()}}</div>
+  <div class="city-data-small-text">It's {{cityData.getDescription()}}</div>
+  <div class="city-data-small-text">Temperature: {{cityData.getTemperature()}} °C</div>
+</div>
